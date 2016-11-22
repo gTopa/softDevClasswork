@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="navbar">
+      HI
+    </div>
+  </body>
+</html>

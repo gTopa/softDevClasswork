@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      .red{color:#ff0000;}
+      .green{color:#00ff00;}
+      .blue{color:#0000ff;}
+    </style>
   </head>
   <body>
     <h1 id="h" class="blue">Hello</h1>
@@ -15,5 +20,7 @@
       <li>item 2</li>
     </ol>
 
+
     <script src="test.js"></script>
+  </body>
 </html>

@@ -1,0 +1,10 @@
+Aim: upDAT (A) ing mongo
+
+Deleting things:
+	.delete_one(<QUERY>) -> deletes first doc that matches query
+	.delete_many(<QUERY>) -> deletes all docs that match query
+
+.update(<QUERY>, <OPERATION>) -> updates a doc that matches the query, operation is a doc that matches an update operaetion:
+	'$set' -> change val of particular field
+	'$unset' -> remove a field
+	'$inc' -> increment val of a field 

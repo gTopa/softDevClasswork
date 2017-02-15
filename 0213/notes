@@ -1,0 +1,13 @@
+beginPath() starts or resets current path
+
+moveTo(x,y) moves the path to pos x,y does not result in a line or a filled section
+
+lineTo(x,y) moves the path to pos (x,y) will result in a line or a filled section
+
+stroke() renders line in a canvas
+
+arc(250, 150, 50, 0, 2 * Math.PI) makes a circle w/ radius 50 center at 250, 150, draws clockwise
+
+closePath() results in a line from current pos to beginning of path
+
+fill() fills interior of path, will not work if path has fewer than 3 points

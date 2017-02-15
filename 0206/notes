@@ -1,0 +1,23 @@
+Aim: Where'd mongo put that data?
+
+create data dir
+mongod --dbpath /data
+
+col.count() -> returns num of documents in col
+
+retrieving data from mongodb:
+	.find() -> Collection method that returns a cursor object that can be used to iterate through all the documents in a collection
+	cursor=col.find()
+	for person in cursor -> person is a dict
+
+	.find_one() -> Collection method that reutrns a single document as a dict, returns first element in natural ordering
+
+	both .find and .find_one can take an argument to narrow results
+	foo.find({'age':25}) -> gets all docs w/ age=25	
+	foo.find_one({'age':25}) -> gets first doc w/ age=25
+
+	can modify search criteria using '$and', '$or', '$not'
+	e.g: foo.find_one( { '$and' : [ { 'name' : 'bob' }, { 'age': 25 } ] } )
+
+	col.find({'age':{'$gt':'30'}})
+	Other inequality stuff: '$gt', '$gte', '$lt', '$lte', '$ne'

@@ -1,0 +1,3 @@
+beginPath() starts or resets current path
+moveTo(x,y) moves the path to pos x,y does not result in a line or a filled section
+lineTo(x,y) moves the path to pos (x,y) will result in a line or a filled section

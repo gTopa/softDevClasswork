@@ -1,0 +1,16 @@
+Aim: Mongo likes py
+
+Working w/ pymongo:
+
+from pymongo import MongoClient
+server=MongoClient(<IP>) -> connects to mongodb server and db, use 149.89.150.100 when in stuy
+to access db, go farther into db: db=server['mydb'], db=server.mydb
+   	      	 	      	  c=db['students'], c=db.students
+	*db, collections not crweated until a doc has been added to them
+
+To add doc:
+1. create dict
+2. insert into collection
+   dic={'name':'bob', 'age':65}
+   c.insert_one(doc)
+

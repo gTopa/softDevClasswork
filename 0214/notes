@@ -1,0 +1,28 @@
+Aim: Canvasing the Area
+
+HTML5:
+   Redesign of HTML with a focus on making more modern features of we browsers easy to work with
+
+   Designed around js and a standardized dom
+
+   Includes built in support for audio and video tags
+
+   Includes element that can be drawn on directly
+
+Canvas:
+   HTML5 elemet that provides a drawing area
+   
+   JS funcs can draw onto a canvas element
+   
+      Must declare what context you are drawing in (e.g. 2d drawing, 3d drawing, raw bitmap editing
+      
+      <style>
+	#slate{border 1px solid}
+      </style
+      <canvas width="500" height="300 id="slate"> </canvas> usually leave it empty
+      JS:
+      var c = document.getElementByID("slate");
+      var ctx = c.getContext('2d');
+      ctx.fillStyle = "#ff0000";
+      ctx.fillRect( 50, 50, 100, 200 )
+      ctx.clearRect( 0, 0, 20, 100 )

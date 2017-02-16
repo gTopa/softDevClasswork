@@ -1,0 +1,9 @@
+var c=document.getElementById("slate")
+var ctx=c.getContext("2d")
+var circle = function(){
+    ctx.fillStyle = "#fffff0"
+    ctx.arc(250,150,50,0,2*Math.PI);
+    ctx.fill()
+};
+
+circle()

@@ -1,0 +1,6 @@
+js event propagation
+   Events initially propacgate downward from top most node in the DOM tree to target element. This is known as event capturing.
+   After event reaches target it propagates back up the DOM tree. This is known as event bubbling
+   By default event listeners dont trigger until even bubbling phase
+   Triggering events at the capture phase can be done by adding <true> as a third arg to event listener
+   Can cancel event propagation w/ e.stopPropagation();

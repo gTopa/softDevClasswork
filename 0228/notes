@@ -1,0 +1,7 @@
+creating svg element in javascript
+document.createElementNS(<NAMESPACE>,<ELEMENT>);
+creates element from specified XML namespace
+
+var c = document.createElementNS("https://www.w3.org/2000/svg","circle");
+c.setAttribute("cx","200");
+document.getElementById("vimage").appendChild(c);

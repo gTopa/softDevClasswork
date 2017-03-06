@@ -1,0 +1,2 @@
+creating svg element in javascript
+document.createElementNS(<NAMESPACE>,<IDENTIFIER>,<ELEMENT>)

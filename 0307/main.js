@@ -3,7 +3,7 @@ var button=document.getElementById("clear");
 
 var change = function(e) {
     console.log("CIRCLE");
-    e.stopPropagation();
+    this.setAttribute("fill","green");
 };
 
 var addCircle = function(e) {

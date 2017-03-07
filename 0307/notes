@@ -4,3 +4,11 @@ js event propagation
    By default event listeners dont trigger until even bubbling phase
    Triggering events at the capture phase can be done by adding <true> as a third arg to event listener
    Can cancel event propagation w/ e.stopPropagation();
+
+Event Propagation
+      1. Element intercepts event
+      2. Browser collects Dom node path of event from starting element to root
+      3. Capture: event propagates down the path from step 2
+      4. Bubble: event propagates up path from step 2
+
+      In event listener "this" is current elemnt running listener
